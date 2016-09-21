@@ -74,7 +74,7 @@ def gen_buildxml(project_dir, project_json, output_dir, build_opts):
         if arr != None:
             ccJsList += arr
 
-    userJsList.append(mainJs)
+    userJsList.insert(0,mainJs)
 
     buildXmlTempFile = open(os.path.join(tools_dir, "template", "build.xml"))
 
